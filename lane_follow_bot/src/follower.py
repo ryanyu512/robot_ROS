@@ -33,7 +33,7 @@ class Follower():
         mask[ub_h:h, 0:w] = 0
 
         M = cv2.moments(mask)
-        print(M['m00'])
+
         if M['m00'] > 0:
             cx = int(M['m10']/M['m00'])
             cy = int(M['m01']/M['m00'])
