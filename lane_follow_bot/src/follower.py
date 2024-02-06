@@ -41,7 +41,7 @@ class Follower():
 
             err = cx - w/2.
             self.twist.linear.x  = 0.2
-            self.twist.angular.z = -float(err)/100. 
+            self.twist.angular.z = -float(err)/500. 
 
             self.cmd_vel_pub.publish(self.twist)
 
